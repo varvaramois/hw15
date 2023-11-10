@@ -1,37 +1,43 @@
 .holder {
     display: flex;
-    flex-basis: auto;
-    max-width: 360px;
-    flex-wrap: wrap;
-    height: 130px;
-    border: 5px solid black;
+    width: 300px;
+    flex-wrap: wrap-reverse;
+    height: 90px;
 }
 .item {
     text-align: center;
-    flex-basis: 180px;
-    flex-direction: row;
+    font-weight: bold;
+    flex-basis: 100px;
 }
 .item1 {
     background-color: rgb(249, 63, 63);
-    order: -1;
-    flex-grow: 2;
+    flex-grow: 1;
+    order: 2;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-top-left-radius: 15px;
 }
 .item2 {
     background-color: rgb(100, 140, 219);
-    order: 2;
-    flex-shrink: 0.3 ;
+    border-bottom: 3px solid black;
 }
 .item3 {
     background-color: rgb(142, 77, 240);
-    order: 1;
-    flex-shrink: 0.3 ;
+    order: -1;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
 }
 .item4 {
     background-color: rgb(26, 103, 25);
-    order: 4;
-    flex-shrink: 0.3 ;
+    order: 1;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
 }
 .item5 {
     background-color: rgb(222, 144, 28);
-    flex-grow: 2;
+    flex-grow: 1;
+    order: 3;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-top-right-radius: 15px;
 }
